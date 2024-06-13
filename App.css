@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #F5F7FB;
+}
+/* First Page Layout */
+.container-1 {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.container-1::before {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 340px;
+    transform: rotate(28deg);
+    background-color: #FFFAD1;
+    border-radius: 70px;
+    top: -160px;
+    right: -100px;
+    z-index: -1;
+}
+.container-1::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 240px;
+    transform: rotate(28deg);
+    background-color: #DEEBF8;
+    border-radius: 80px;
+    bottom: -140px;
+    left: -90px;
+    z-index: -1;
+}
+.container-1 .quiz {
+    color: #293264;
+    font-size: 53px;
+    line-height: 36px;
+    font-weight: 800;
+    font-family: karla;
+    letter-spacing: 1px;
+}
+.container-1 .description {
+    color: #293264;
+    font-size: 26px;
+    line-height: 19.5px;
+    font-weight: 400;
+    font-family: inter;
+    margin: 60px 0px 70px ;
+    letter-spacing: 1px;
+}
+.container-1 .btn-1 {
+    background-color: #4D5B9E;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 30px 80px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: inter;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.329);
+    outline: none;
+}
+.container-1 .btn-1:active {
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.422),
+    4px 4px 4px rgba(0, 0, 0, 0.237);
+    transform: scale(.97);
+}
+/* Second Page Layout */
+.container-2 {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px 120px;
+}
+.container-2::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 240px;
+    transform: rotate(28deg);
+    background-color: #FFFAD1;
+    border-radius: 70px;
+    top: -90px;
+    right: -90px;
+    z-index: -1;
+}
+.container-2::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 240px;
+    transform: rotate(28deg);
+    background-color: #DEEBF8;
+    border-radius: 80px;
+    bottom: -140px;
+    left: -90px;
+    z-index: -1;
+}
+.container-2 .quistion {
+    margin-bottom: 20px;
+    min-width: 450px;
+    border-bottom: .79px solid #DBDEF0;
+}
+.container-2 .head {
+    color: #293264;
+    font-size: 22px;
+    line-height: 1.4;
+    font-family: karla;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.container-2 .choices {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.container-2 .answer {
+    padding: 5px 20px;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: inter;
+    text-align: center;
+    border: .79px solid #4D5B9E;
+    color: #293264;
+    border-radius: 12px;
+    cursor: pointer;
+    transition-duration: .16;
+    
+}
+.container-2 .answer:not(:last-child) {
+    margin-right: 15px;
+}
+.container-2 .answer:hover {
+    background-color: #D6DBF5;
+}
+.container-2 .active {
+    background-color: #D6DBF5;
+}
+.container-2 .active:not(:last-child) {
+    margin-right: 15px;
+}
+.container-2 .answer:active {
+    transform: scale(.96);
+}
+.container-2 .check {
+    color: white;
+    background-color: #4D5B9E;
+    border: none;
+    outline: none;
+    width: fit-content;
+    padding: 20px 30px;
+    font-family: inter;
+    font-weight: 600px;
+    text-align: center;
+    cursor: pointer;
+    margin: auto;
+    border-radius: 10px;
+    font-size: 19px;
+    transition-duration: .16s;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.199);
+}
+.container-2 .check:active {
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.422),
+    4px 4px 4px rgba(0, 0, 0, 0.18);
+    transform: scale(.97);
+    ;
+}
+.container-2 .score {
+    color: #293264;
+    font-size: 19px;
+    line-height: 1.4;
+    font-family: karla;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container-2 .again {
+    letter-spacing: 1px;
+} 
+.container-2 .green {
+    background-color: #94D7A2;
+    border: none;
+}
+.container-2 .red {
+    background-color: #F8BCBC;
+    color: #515676;
+    border: none;
+}
+/* login page */
